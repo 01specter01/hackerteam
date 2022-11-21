@@ -2,21 +2,33 @@ import { useEffect } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import "./App.scss";
 import Loading from "./components/Loading";
-import Home from "./components/Home";
+import CodingSubscription from "./components/middleComponents/CodingSubscription";
+import Contacts from "./components/middleComponents/Contacts";
+import Docs from "./components/middleComponents/Docs";
+import Home from "./components/middleComponents/Home";
+import Root from "./components/middleComponents/Root";
+import Tutorial from "./components/middleComponents/Tutorial";
+import navItems from "./data.json";
 
 function App() {
   const navigator = useNavigate();
   useEffect(() => {
     setTimeout(() => {
-      navigator("/home");
+      navigator("/root/react");
     }, 2000);
-  });
+  }, []);
 
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Loading />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="root" element={<Root />}>
+          <Route path={navItems.navItems[0]} element={<Home />} />
+          <Route path={navItems.navItems[1]} element={<Docs />} />
+          <Route path={navItems.navItems[2]} element={<Tutorial />} />
+          <Route path={navItems.navItems[3]} element={<CodingSubscription />} />
+          <Route path={navItems.navItems[4]} element={<Contacts />} />
+        </Route>
       </Routes>
     </div>
   );
