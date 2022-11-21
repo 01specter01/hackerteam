@@ -1,5 +1,41 @@
+$primary: #444;
+$secondary: #61dafbaa;
+$third: beige;
 .navContainer {
   display: flex;
   gap: 2rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
+  background-color: $primary;
+  padding: 2.5rem;
+  position: relative;
+  a {
+    color: $third;
+    text-decoration: none;
+    &.active {
+      color: $secondary;
+      text-decoration: underline;
+    }
+    &:nth-of-type(1) {
+      font-weight: 900;
+      transform: translateX(-1.3rem);
+    }
+  }
+  .searchContainer {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .searchInput {
+      outline: none;
+      border-radius: 5px;
+      padding: 0 0.5rem;
+      border: none;
+      font-size: 1.3rem;
+    }
+  }
+  .searchIcon {
+    transform: translateX(-120%);
+    font-size: 1rem;
+  }
 }
