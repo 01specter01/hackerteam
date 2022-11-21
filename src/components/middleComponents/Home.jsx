@@ -1,5 +1,15 @@
-import React from "react";
+import { useOutletContext } from "react-router-dom";
 
 export default function Home() {
-  return <div className="home">React Page Home</div>;
+  const search = useOutletContext();
+  const text =
+    "On this page we've listed some React-related communities that you can be a part of; see the other pages in this section for additional online and in-person learning materials";
+
+  return (
+    <div className="home">
+      {text.slice(0, text.indexOf(search))}
+      <span className="searched">{search}</span>
+      {text.slice(text.indexOf(search) + search.length)}
+    </div>
+  );
 }
