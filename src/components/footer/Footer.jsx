@@ -13,12 +13,15 @@ const Footer = () => {
         <Box>
             <h1
                 style={{
-                    color: "green",
+                    color: "beige",
                     textAlign: "center",
                     marginTop: "-50px",
+                    fontWeight: "900",
+                    textDecoration: "underline",
+                    marginBottom: "2rem",
                 }}
             >
-                GeeksforGeeks: A Computer Science Portal for Geeks
+                HackerTeam: Learning Platform to get started with react
             </h1>
             <Container>
                 <Row>
@@ -37,10 +40,10 @@ const Footer = () => {
                     </Column>
                     <Column>
                         <Heading>Contact Us</Heading>
-                        <FooterLink href="#">Uttar Pradesh</FooterLink>
-                        <FooterLink href="#">Ahemdabad</FooterLink>
-                        <FooterLink href="#">Indore</FooterLink>
-                        <FooterLink href="#">Mumbai</FooterLink>
+                        <FooterLink href="#">Leo Volwahsen</FooterLink>
+                        <FooterLink href="#">Ella Rotari</FooterLink>
+                        <FooterLink href="#">Yaroub Al Haj Dawoud</FooterLink>
+                        <FooterLink href="#">Mohannad</FooterLink>
                     </Column>
                     <Column>
                         <Heading>Social Media</Heading>
@@ -78,3 +81,4 @@ const Footer = () => {
         </Box>
     );
 };
+export default Footer;
