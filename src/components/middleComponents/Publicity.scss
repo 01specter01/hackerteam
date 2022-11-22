@@ -3,14 +3,14 @@ $secondary: #61dafbaa;
 $third: beige;
 .textPublicity {
   box-shadow: 0 0 30px 5px $primary;
-  background-color: $third;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
   height: 500px;
-  border-radius: 3rem;
+  border-radius: 5px;
   h1 {
     color: $secondary;
   }
@@ -22,6 +22,6 @@ $third: beige;
     color: aliceblue;
     font-size: 1.2rem;
     font-weight: 900;
-    border-radius: 3rem;
+    border-radius: 5px;
   }
 }

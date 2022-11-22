@@ -15,10 +15,10 @@ export default function Publicty() {
         <h4>Hacker Team </h4>
 
         <Animated
-          animationIn="rotateIn"
-          animationOut="rotateOut"
+          animationIn="shake"
+          animationOut="headShake"
           isVisible={true}
-          animationInDuration="5000"
+          animationOutDuration="9000"
         >
           <button className="animatedBtn" onClick={handleClickBtn}>
             Subscribe Us
