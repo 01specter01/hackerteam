@@ -1,5 +1,4 @@
 {
-
   "tutorial": {
     "title": [
       "Learn useState In 15 Minutes - React Hooks Explained",
@@ -15,7 +14,7 @@
       "t2ypzz6gJm0",
       "5LrDIWkK_Bc"
     ]
-  }
+  },
 
   "navItems": ["react", "docs", "tutorial", "subscription", "contacts"],
 
@@ -85,5 +84,4 @@
       "description": "The glossary contains an overview of the most common terms you’ll see in the React documentation. There is also a FAQ section dedicated to short questions and answers about common topics, including making AJAX requests, component state, and file structure."
     }
   ]
-
 }
