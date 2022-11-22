@@ -1,6 +1,7 @@
 import data from "../../data.json";
 export default function Docs() {
   return (
+
     <>
       <div className="title">
         <h1>{data.docs.title}</h1>
@@ -50,5 +51,6 @@ export default function Docs() {
         }
       })}
     </>
+
   );
 }
