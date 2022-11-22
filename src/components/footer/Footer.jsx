@@ -30,7 +30,7 @@ const Footer = () => {
                 <Row>
                     <Column>
                         <Heading>About Us</Heading>
-                        <FooterLink href={<Aim />}>Aim</FooterLink>
+                        <FooterLink path="./aboutUs">Aim</FooterLink>
                         <FooterLink href={<Vision />}>Vision</FooterLink>
                         <FooterLink href={<Testemonials />}>
                             Testimonials
