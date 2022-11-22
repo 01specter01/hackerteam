@@ -1,12 +1,8 @@
 import data from "../../data.json";
-import { useOutletContext } from "react-router-dom";
-import "./Docs.scss";
-import Publicty from "./Publicty";
 
 export default function Docs() {
   const search = useOutletContext();
-  return (
-    <div className="docs">
+  return ( <div className="docs">
       <div className="rightContainer">
         {data.docs.map((el) => (
           <div className="docContainer" key={el.title}>
@@ -23,5 +19,6 @@ export default function Docs() {
       </div>
       <Publicty />
     </div>
+
   );
 }
