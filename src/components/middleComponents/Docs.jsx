@@ -1,8 +1,27 @@
+import data from "../../data.json";
+import { useOutletContext } from "react-router-dom";
+import "./Docs.scss";
+import Publicty from "./Publicty";
+
 export default function Docs() {
+  const search = useOutletContext();
   return (
-    <div>
-      here we will show our documentation about react and something generaly
-      about our page
+    <div className="docs">
+      <div className="rightContainer">
+        {data.docs.map((el) => (
+          <div className="docContainer" key={el.title}>
+            <h2>{el.title}</h2>
+            <p>
+              {el.description.slice(0, el.description.indexOf(search))}
+              <span className="searched">{search}</span>
+              {el.description.slice(
+                el.description.indexOf(search) + search.length
+              )}
+            </p>
+          </div>
+        ))}
+      </div>
+      <Publicty />
     </div>
   );
 }
