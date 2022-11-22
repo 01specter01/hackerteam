@@ -63,6 +63,19 @@
     ]
   },
   "tutorial": {
-    "title": ["create react App"]
+    "title": [
+      "Learn useState In 15 Minutes - React Hooks Explained",
+      "Learn useEffect In 13 Minutes",
+      "Learn useMemo In 10 Minutes",
+      "Learn useRef in 11 Minutes     ",
+      "Learn useContext In 13 Minutes"
+    ],
+    "link": [
+      "O6P86uwfdR0",
+      "0ZJgIjIuY7U",
+      "THL1OPn72vo",
+      "t2ypzz6gJm0",
+      "5LrDIWkK_Bc"
+    ]
   }
 }
