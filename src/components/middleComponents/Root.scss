@@ -7,3 +7,12 @@ $third: beige;
   font-weight: 800;
   font-style: italic;
 }
+.rootcontainer {
+  & > :nth-child(2) {
+    display: flex;
+    height: 600px;
+  }
+  .publicity {
+    width: 30%;
+  }
+}
