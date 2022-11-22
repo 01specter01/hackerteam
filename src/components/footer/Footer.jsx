@@ -7,6 +7,9 @@ import {
     FooterLink,
     Heading,
 } from "./FooterStyles";
+import Aim from "./aboutUs/Aim";
+import Vision from "./aboutUs/Vision";
+import Testemonials from "./aboutUs/Testemonials";
 
 const Footer = () => {
     return (
@@ -27,9 +30,11 @@ const Footer = () => {
                 <Row>
                     <Column>
                         <Heading>About Us</Heading>
-                        <FooterLink href="#">Aim</FooterLink>
-                        <FooterLink href="#">Vision</FooterLink>
-                        <FooterLink href="#">Testimonials</FooterLink>
+                        <FooterLink href={<Aim />}>Aim</FooterLink>
+                        <FooterLink href={<Vision />}>Vision</FooterLink>
+                        <FooterLink href={<Testemonials />}>
+                            Testimonials
+                        </FooterLink>
                     </Column>
                     <Column>
                         <Heading>Services</Heading>
