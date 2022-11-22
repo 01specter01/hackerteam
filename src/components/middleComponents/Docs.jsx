@@ -21,7 +21,7 @@ export default function Docs() {
               <p>{data.docs.hText[i]}</p>
               {data.docs.sTitle[0].tryReact.map((ele, index) => {
                 return (
-                  <div key={index} >
+                  <div key={index}>
                     <h3> {ele} </h3>
                     <p> {data.docs.sText[0].tryReact[index]} </p>
                   </div>
@@ -36,7 +36,7 @@ export default function Docs() {
               <p>{data.docs.hText[i]}</p>
               {data.docs.sTitle[0].learnReact.map((ele, index) => {
                 return (
-                  <div key={index} >
+                  <div key={index}>
                     <h3> {ele} </h3>
                     <p> {data.docs.sText[0].learnReact[index]} </p>
                   </div>
