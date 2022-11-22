@@ -1,4 +1,4 @@
-{
+ {
   "navItems": ["react", "docs", "tutorial", "codingsubscription", "contacts"],
   "docs": {
     "title": "Getting started",
@@ -61,5 +61,8 @@
         ]
       }
     ]
+  },
+  "tutorial": {
+    "title": ["create react App"]
   }
 }
