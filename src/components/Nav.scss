@@ -18,6 +18,7 @@ $third: beige;
     &:nth-of-type(1) {
       font-weight: 900;
       transform: translateX(-1.3rem);
+      color: $secondary;
     }
   }
   .searchContainer {
