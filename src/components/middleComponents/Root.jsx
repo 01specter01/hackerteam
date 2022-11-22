@@ -5,12 +5,12 @@ import "./Root.scss";
 import Footer from "../footer/Footer";
 
 export default function Root() {
-    const [search, setSearch] = useState("");
-    return (
-        <div>
-            <Nav setSearch={setSearch} />
-            <Outlet context={search} />
-            <Footer />
-        </div>
-    );
+  const [search, setSearch] = useState("");
+  return (
+    <div className="rootcontainer">
+      <Nav setSearch={setSearch} />
+      <Outlet context={search} />
+      <Footer />
+    </div>
+  );
 }

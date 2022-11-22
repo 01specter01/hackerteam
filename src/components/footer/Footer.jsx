@@ -1,17 +1,18 @@
 import React from "react";
 import {
-    Box,
-    Container,
-    Row,
-    Column,
-    FooterLink,
-    Heading,
+  Box,
+  Container,
+  Row,
+  Column,
+  FooterLink,
+  Heading,
 } from "./FooterStyles";
 import Aim from "./aboutUs/Aim";
 import Vision from "./aboutUs/Vision";
 import Testemonials from "./aboutUs/Testemonials";
 
 const Footer = () => {
+
     return (
         <Box>
             <h1
@@ -85,5 +86,5 @@ const Footer = () => {
             </Container>
         </Box>
     );
-};
+}
 export default Footer;
