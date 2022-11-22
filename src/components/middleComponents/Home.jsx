@@ -1,4 +1,5 @@
 import { useOutletContext } from "react-router-dom";
+import Publicty from "./Publicty";
 
 export default function Home() {
   const search = useOutletContext();
@@ -10,6 +11,7 @@ export default function Home() {
       {text.slice(0, text.indexOf(search))}
       <span className="searched">{search}</span>
       {text.slice(text.indexOf(search) + search.length)}
+      <Publicty />
     </div>
   );
 }
