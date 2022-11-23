@@ -34,9 +34,9 @@ function App() {
                         element={<CodingSubscription />}
                     />
                     <Route path={navItems.navItems[4]} element={<Contacts />} />
-                    <Route path="Aim" element={<Aim />} />
-                    <Route path="Vision" element={<Vision />} />
-                    <Route path="Testemonials" element={<Testemonials />} />
+                    <Route path="aim" />
+                    <Route path="vision" />
+                    <Route path="testemonials" />
                 </Route>
             </Routes>
         </div>

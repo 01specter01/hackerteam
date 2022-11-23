@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import {
     Box,
     Container,
@@ -8,41 +8,18 @@ import {
     FooterLink,
     Heading,
 } from "./FooterStyles";
-import Aim from "./aboutUs/Aim";
-import Vision from "./aboutUs/Vision";
-import Testemonials from "./aboutUs/Testemonials";
 
 const Footer = () => {
     return (
         <>
-            <h1
-                style={{
-                    color: "beige",
-                    textAlign: "center",
-                    marginTop: "-50px",
-                    fontWeight: "900",
-                    textDecoration: "underline",
-                    marginBottom: "2rem",
-                }}
-            >
-                HackerTeam: Learning Platform to get started with react
-            </h1>
-
-            <Link to="/aim" element={<Aim />}>
-                Aim
-            </Link>
-
             <Box>
                 <Container>
                     <Row>
                         <Column>
                             <Heading>About Us</Heading>
-
-                            {/* <Link to="/aim" element={<Aim />}>
-                                Aim
-                            </Link> */}
-                            <FooterLink href={<Vision />}>Vision</FooterLink>
-                            <FooterLink href={<Testemonials />}>
+                            <FooterLink href="aim">Aim</FooterLink>
+                            <FooterLink href="vision">Vision</FooterLink>
+                            <FooterLink href="testemonials">
                                 Testimonials
                             </FooterLink>
                         </Column>
