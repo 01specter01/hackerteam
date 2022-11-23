@@ -1,56 +1,27 @@
 import data from "../../data.json";
+import { useOutletContext } from "react-router-dom";
+import "./Docs.scss";
+import Publicty from "./Publicty";
+
 export default function Docs() {
+  const search = useOutletContext();
   return (
-
-    <>
-      <div className="title">
-        <h1>{data.docs.title}</h1>
-        <p>{data.docs.disc}</p>
+    <div className="docs">
+      <div className="rightContainer">
+        {data.docs.map((el) => (
+          <div className="docContainer" key={el.title}>
+            <h2>{el.title}</h2>
+            <p>
+              {el.description.slice(0, el.description.indexOf(search))}
+              <span className="searched">{search}</span>
+              {el.description.slice(
+                el.description.indexOf(search) + search.length
+              )}
+            </p>
+          </div>
+        ))}
       </div>
-      {data.docs.hTitle.map((el, i) => {
-        if (i !== 0 && i !== 1) {
-          return (
-            <div>
-              <h1>{el}</h1>
-              <p>{data.docs.hText[i]}</p>
-            </div>
-          );
-        } else if (i === 0) {
-          return (
-            <div>
-              <h1>{el}</h1>
-              <p>{data.docs.hText[i]}</p>
-              {data.docs.sTitle[0].tryReact.map((ele, index) => {
-                return (
-                  <div key={index}>
-                    <h3> {ele} </h3>
-                    <p> {data.docs.sText[0].tryReact[index]} </p>
-                  </div>
-                );
-              })}
-            </div>
-          );
-        } else if (i === 1) {
-          return (
-            <div>
-              <h1>{el}</h1>
-              <p>{data.docs.hText[i]}</p>
-              {data.docs.sTitle[0].learnReact.map((ele, index) => {
-                return (
-                  <div key={index}>
-                    <h3> {ele} </h3>
-                    <p> {data.docs.sText[0].learnReact[index]} </p>
-                  </div>
-                );
-              })}
-            </div>
-          );
-        }
-
-        {
-        }
-      })}
-    </>
-
+      <Publicty />
+    </div>
   );
 }
