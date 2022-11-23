@@ -12,9 +12,9 @@ $third: beige;
     flex-direction: column;
     padding: 3rem;
     width: 50%;
-    border: 0px solid grey;
-    box-shadow: 0 0 15px white;
-    border-radius: 2rem;
+
+    box-shadow: 0 0 30px 2px $primary;
+    border-radius: 5px;
     h1 {
       margin: 2rem;
       text-align: center;
@@ -38,10 +38,14 @@ $third: beige;
         outline: none;
         font-size: 1.3rem;
         border-radius: 5px;
-        padding: 0.3rem;
+        padding: 0.7rem;
+        border: 0.2px solid #444;
       }
       button {
-        padding: 0.4rem 2rem;
+        font-weight: 900;
+        margin: 0 auto;
+        width: max-content;
+        padding: 0.7rem 5rem;
         background-color: $secondary;
         border: none;
         border-radius: 5px;

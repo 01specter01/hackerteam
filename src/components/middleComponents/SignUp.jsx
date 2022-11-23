@@ -40,7 +40,7 @@ export default function SignUp() {
       setLogIn((prev) => (prev = { ...prev, passwordCheck: true }));
 
       alert(
-        "Congratulations, you are one step closer to becoming a better WebDeveloper!!!"
+        "Congratulations, you are one step closer to becoming a better WebDeveloper!!! Welcome to our world, you Nerd!!! 🥳 🥳 🥳"
       );
       navigator("/root/react");
     } else {

@@ -11,6 +11,7 @@ export default function CodingSubscription() {
             <h1>{card.title}</h1>
             <h2>{card.text1}</h2>
             <h2>{card.text2}</h2>
+            <h2>{card.text2a}</h2>
             <ul className="optionCards">
               {card.text3.map((el) => (
                 <li>{el}</li>
