@@ -82,7 +82,7 @@ export default function Contacts() {
           <button
             onClick={() => {
               alert(
-                "Thank you for your message, I will contact you as soon as possible"
+                "Thank you for your message, we will contact you as soon as possible."
               );
             }}
           >

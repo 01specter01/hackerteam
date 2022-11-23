@@ -3,15 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 import "./SignUp.scss";
 
-export default function SignUp() {
+export default function LogIn() {
   const navigator = useNavigate();
   const INITIAL = {
-    firstName: "",
-    lastName: "",
     email: "",
     password: "",
-    repeatPassword: "",
-    passwordCheck: true,
   };
   const [logIn, setLogIn] = useState(INITIAL);
 
@@ -27,6 +23,7 @@ export default function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (logIn.password === logIn.repeatPassword && logIn.password.length > 5) {
       setLogIn((prev) => (prev = { ...prev, passwordCheck: true }));
 
@@ -44,25 +41,8 @@ export default function SignUp() {
     <section className="logIn">
       <div className="signIn">
         <h1>Become a Hacker with us!!</h1>
-        {!logIn.passwordCheck && (
-          <p className="checkPassword">Wrong Password ❗❗❗ </p>
-        )}
-        <form className="form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            value={logIn.firstName}
-            name="firstName"
-            placeholder="Enter your first name"
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            value={logIn.lastName}
-            name="lastName"
-            placeholder="Enter your last name"
-            onChange={handleChange}
-          />
 
+        <form className="form" onSubmit={handleSubmit}>
           <input
             type="email"
             value={logIn.email}
@@ -78,15 +58,7 @@ export default function SignUp() {
             onChange={handleChange}
           />
 
-          <input
-            type="password"
-            value={logIn.repeatPassword}
-            name="repeatPassword"
-            placeholder="Repeat the password "
-            onChange={handleChange}
-          />
-
-          <button>SignUp</button>
+          <button>LogIn</button>
         </form>
       </div>
     </section>
