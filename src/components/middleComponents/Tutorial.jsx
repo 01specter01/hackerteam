@@ -2,17 +2,23 @@ import data from "../../data.json";
 import Publicty from "./Publicty";
 import "./Tutorial.scss";
 import { AiFillLike, AiFillDislike } from "react-icons/ai";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Tutorial() {
-  const [like, setLike] = useState({});
-
+  const [like, setLike] = useState(
+    localStorage.getItem("likes") !== null
+      ? JSON.parse(localStorage.getItem("likes"))
+      : {}
+  );
+  useEffect(() => {
+    localStorage.setItem("likes", JSON.stringify(like));
+  }, [like]);
   const handleClickIcon = (i, asc) => {
     setLike(
       (prev) =>
         (prev = {
           ...prev,
-          [i]: asc ? like[i] + 1 || 1 : like[i] - 1 || 1,
+          [i]: asc ? like[i] + 1 || 1 : like[i] - 1 || 0,
         })
     );
   };
@@ -39,7 +45,7 @@ export default function Tutorial() {
                     onClick={() => handleClickIcon(i, true)}
                     className="liked"
                   />
-                  <span className="counter">{like[i]}</span>
+                  <span className="counter">{like[i] > 0 && like[i]}</span>
                   <AiFillDislike
                     className="disliked"
                     onClick={() => handleClickIcon(i, false)}
