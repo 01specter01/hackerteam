@@ -1,11 +1,11 @@
 import data from "../../data.json";
-
+import "./Tutorial.scss";
 export default function Tutorial() {
   return (
     <>
       {data.tutorial.title.map((el, i) => {
         return (
-          <div>
+          <div className="v-Countainer" >
             <iframe
               width="853"
               height="480"
