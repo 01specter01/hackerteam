@@ -1,8 +1,10 @@
 import data from "../../data.json";
 import { useOutletContext } from "react-router-dom";
+
 import Publicty from "./Publicty";
 import "./Docs.scss";
 import Tools from "../Tools";
+
 
 export default function Docs() {
   const search = useOutletContext();
