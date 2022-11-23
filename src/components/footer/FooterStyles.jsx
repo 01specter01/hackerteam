@@ -33,7 +33,6 @@ export const Row = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   color: #61dafbaa;
-
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
@@ -52,7 +51,7 @@ export const FooterLink = styled.a`
 `;
 
 export const Heading = styled.p`
-  font-size: 16px;
+  font-size: 20px;
   color: #61dafbaa;
   margin-bottom: 10px;
   font-weight: bold;

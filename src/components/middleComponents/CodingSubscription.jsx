@@ -1,6 +1,8 @@
 import cards from "../../data.json";
 import "./CodingSubscription.scss";
+import { useNavigate } from "react-router-dom";
 export default function CodingSubscription() {
+  const navigator = useNavigate();
   return (
     <div className="cardsContainer">
       {cards.cards.map((card) => {
@@ -14,7 +16,12 @@ export default function CodingSubscription() {
                 <li>{el}</li>
               ))}
             </ul>
-            <button className="btnSignUp">SignUp</button>
+            <button
+              className="btnSignUp"
+              onClick={() => navigator("/root/signup")}
+            >
+              SignUp
+            </button>
           </div>
         );
       })}
