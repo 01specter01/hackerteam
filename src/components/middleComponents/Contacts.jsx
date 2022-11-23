@@ -32,7 +32,8 @@ const reducer = (value, action) => {
         ...value,
         phone: action.value,
       });
-      default: return value
+    default:
+      return value;
   }
 };
 
@@ -43,43 +44,50 @@ export default function Contacts() {
     <div>
       <div className="fC">
         <form>
-          <label>Vorname</label>
+          <label>Name</label>
           <input
+            placeholder="text you Name"
             type="text"
             value={value.vorname}
             onChange={() => dispatch({ type: "vorname" })}
             required
           />
-          <label>Nachname</label>
+          <label>Surname</label>
           <input
+            placeholder="text you Surname"
             type="text"
             required
             value={value.nachname}
             onChange={() => dispatch({ type: "nachname" })}
           />
-          <label>Email Adresse</label>
+          <label>Email Adress</label>
           <input
+            placeholder="text your E-mail"
             required
             type="email"
             value={value.email}
             onChange={() => dispatch({ type: "email" })}
           />
-          <label>telphonenummer</label>
+          <label>Phone Number</label>
           <input
+            placeholder="text your number phone"
             required
-            type="number"
+            type="tel"
             value={value.phone}
             onChange={() => dispatch({ type: "phone" })}
           />
           <br />
-          <textarea
-            required
-            placeholder="Ihr Nachricht an uns"
-            rows="10"
-            cols="47"
-          />
+          <textarea required placeholder="Text us..." rows="10" cols="47" />
           <br />
-          <button onClick={()=>{alert("vielen Dank für Ihr Nachricht wir melden uns so schnell wie möglich bei Ihnen!!")}} >send</button>
+          <button
+            onClick={() => {
+              alert(
+                "Thank you for your message, I will contact you as soon as possible"
+              );
+            }}
+          >
+            send
+          </button>
         </form>
       </div>
     </div>

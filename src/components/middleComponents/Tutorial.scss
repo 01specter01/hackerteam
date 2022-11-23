@@ -1,8 +1,40 @@
-.v-Countainer{
+$primary: #21232a;
+$secondary: #61dafbaa;
+$third: beige;
+.tutorials {
+  width: 70%;
+  height: 130%;
+  gap: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+  align-items: center;
+  justify-items: center;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .textVideo {
+    font-size: 1.5rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.v-Countainer h1{
-    margin: 3rem;
+    justify-content: space-between;
+  }
+  .likeIcons {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .liked {
+    &:hover {
+      color: $secondary;
+    }
+  }
+  .disliked {
+    &:hover {
+      color: red;
+    }
+  }
+  .counter {
+    color: red;
+  }
 }
