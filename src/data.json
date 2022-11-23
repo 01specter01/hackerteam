@@ -83,5 +83,25 @@
       "title": "Glossary and FAQ",
       "description": "The glossary contains an overview of the most common terms you’ll see in the React documentation. There is also a FAQ section dedicated to short questions and answers about common topics, including making AJAX requests, component state, and file structure."
     }
+  ],
+  "cards": [
+    {
+      "title": "Free",
+      "text1": "10 Questionss per Month",
+      "text2": "Avaible Mo-Fr 09.00-12.00",
+      "text3": ["Basics", "Operators", "OneHook"]
+    },
+    {
+      "title": "On demand",
+      "text1": "$0.1 per Question",
+      "text2": "Avaible Mo-Fr 09.00-18.00",
+      "text3": ["Basics", "Hooks", "Components"]
+    },
+    {
+      "title": "Vip/Pro",
+      "text1": "$9.99 per Month",
+      "text2": "Avaible 24/7",
+      "text3": ["CustomHooks", "Insider", "Components"]
+    }
   ]
 }
