@@ -9,6 +9,9 @@ import Home from "./components/middleComponents/Home";
 import Root from "./components/middleComponents/Root";
 import Tutorial from "./components/middleComponents/Tutorial";
 import navItems from "./data.json";
+import Aim from "./components/footer/aboutUs/Aim";
+import Vision from "./components/footer/aboutUs/Vision";
+import Testemonials from "./components/footer/aboutUs/Testemonials";
 
 function App() {
     const navigator = useNavigate();
@@ -31,6 +34,9 @@ function App() {
                         element={<CodingSubscription />}
                     />
                     <Route path={navItems.navItems[4]} element={<Contacts />} />
+                    <Route path="Aim" element={<Aim />} />
+                    <Route path="Vision" element={<Vision />} />
+                    <Route path="Testemonials" element={<Testemonials />} />
                 </Route>
             </Routes>
         </div>

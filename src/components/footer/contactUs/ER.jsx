@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function ER() {
-    return <div>ER</div>;
+    return (
+        <>
+            <h1>Ella</h1>
+        </>
+    );
 }
