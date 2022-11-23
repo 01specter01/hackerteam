@@ -1,32 +1,18 @@
 {
-<<<<<<< HEAD
-  "navItems": ["react", "docs", "tutorial", "codingsubscription", "contacts"],
-=======
->>>>>>> 6dac6f38098f2d9c19d2125b5f5474baa4a9344f
-
-  "tutorial": {
-    "title": [
-      "Learn useState In 15 Minutes - React Hooks Explained",
-      "Learn useEffect In 13 Minutes",
-      "Learn useMemo In 10 Minutes",
-      "Learn useRef in 11 Minutes     ",
-      "Learn useContext In 13 Minutes"
-    ],
-    "link": [
-      "O6P86uwfdR0",
-      "0ZJgIjIuY7U",
-      "THL1OPn72vo",
-      "t2ypzz6gJm0",
-      "5LrDIWkK_Bc"
-    ]
-<<<<<<< HEAD
-  },
-=======
-  }
-
-  "navItems": ["react", "docs", "tutorial", "subscription", "contacts"],
->>>>>>> 6dac6f38098f2d9c19d2125b5f5474baa4a9344f
-
+  "title": [
+    "Learn useState In 15 Minutes - React Hooks Explained",
+    "Learn useEffect In 13 Minutes",
+    "Learn useMemo In 10 Minutes",
+    "Learn useRef in 11 Minutes     ",
+    "Learn useContext In 13 Minutes"
+  ],
+  "link": [
+    "O6P86uwfdR0",
+    "0ZJgIjIuY7U",
+    "THL1OPn72vo",
+    "t2ypzz6gJm0",
+    "5LrDIWkK_Bc"
+  ],
   "docs": [
     {
       "title": "Try React",
@@ -93,8 +79,4 @@
       "description": "The glossary contains an overview of the most common terms you’ll see in the React documentation. There is also a FAQ section dedicated to short questions and answers about common topics, including making AJAX requests, component state, and file structure."
     }
   ]
-<<<<<<< HEAD
-=======
-
->>>>>>> 6dac6f38098f2d9c19d2125b5f5474baa4a9344f
 }
