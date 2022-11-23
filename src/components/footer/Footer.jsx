@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "./Footer.scss";
 
 import {
   Box,
@@ -44,9 +45,21 @@ const Footer = () => {
           </Column>
           <Column className="column">
             <Heading>Contact Us</Heading>
-            <NavLink>Leo Volwahsen</NavLink>
-            <NavLink>Ella Rotari</NavLink>
-            <NavLink>Yaroub Al Haj Dawoud</NavLink>
+            <a
+              href="https://www.linkedin.com/in/leo-volwahsen/"
+              target="_blank"
+            >
+              Leo Volwahsen
+            </a>
+            <a
+              href="https://www.linkedin.com/in/elena-rotari-45b330243/"
+              target="_blank"
+            >
+              Ella Rotari
+            </a>
+            <a href="https://www.linkedin.com/in/yaaroub-al-haj-dawoud-82a725200/">
+              Yaroub Al Haj Dawoud
+            </a>
             <NavLink>Mohannad</NavLink>
           </Column>
         </Row>

@@ -9,12 +9,15 @@ $third: beige;
   gap: 1rem;
 
   form {
-    width: 40%;
+    box-shadow: 0 0 30px 2px $primary;
+    padding: 2rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0.5rem;
     justify-content: center;
+    border-radius: 5px;
     button {
       padding: 0.4rem 5rem;
       background-color: $secondary;
