@@ -8,6 +8,7 @@ $third: beige;
 
   .rightContainer {
     padding: 2rem 2rem;
+
     text-align: justify;
     width: 70%;
     overflow: scroll;
@@ -16,7 +17,10 @@ $third: beige;
       display: none;
     }
     .docContainer {
+      justify-content: center;
       margin: 2rem;
+      width: 70%;
+
       h2 {
         text-align: center;
         margin: 1rem;

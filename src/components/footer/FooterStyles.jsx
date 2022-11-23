@@ -1,15 +1,16 @@
 import styled from "styled-components"
 
 export const Box = styled.div`
-  padding: 50px 20px 30px 20px;
-  background: #21232a;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 
-  @media (max-width: 1000px) {
-    padding: 20px 15px;
-  }
+    padding: 50px 20px 30px 20px;
+    background: #444;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    @media (max-width: 1000px) {
+        padding: 70px 30px;
+    }
 `;
 
 export const Container = styled.div`
