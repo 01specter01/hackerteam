@@ -49,7 +49,9 @@ export default function Contacts() {
             placeholder="text you Name"
             type="text"
             value={value.vorname}
-            onChange={() => dispatch({ type: "vorname" })}
+            onChange={(e) =>
+              dispatch({ type: "vorname", value: e.target.value })
+            }
             required
           />
           <label>Surname</label>

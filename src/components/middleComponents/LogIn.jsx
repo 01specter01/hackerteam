@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useOutletContext } from "react-router-dom";
 
 import "./SignUp.scss";
 
 export default function LogIn() {
+  const [search, setLogged] = useOutletContext();
   const navigator = useNavigate();
   const INITIAL = {
     email: "",
@@ -24,17 +25,25 @@ export default function LogIn() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (logIn.password === logIn.repeatPassword && logIn.password.length > 5) {
-      setLogIn((prev) => (prev = { ...prev, passwordCheck: true }));
-
-      alert(
-        "Congratulations, you are one step closer to becoming a better WebDeveloper!!! Welcome to our world, you Nerd!!! 🥳 🥳 🥳"
-      );
-      setLogIn((prev) => (prev = INITIAL));
-      navigator("/root/react");
-    } else {
-      setLogIn((prev) => (prev = { ...prev, passwordCheck: false }));
-    }
+    fetch("http://localhost:3000/users")
+      .then((res) => res.json())
+      .then((json) => {
+        if (
+          json.filter(
+            (el) => el.email === logIn.email && el.password === logIn.password
+          ).length
+        ) {
+          const user = json.find(
+            (el) => el.email === logIn.email && el.password === logIn.password
+          );
+          localStorage.setItem("user", JSON.stringify(user.firstName));
+          setLogged(user.firstName);
+          setLogIn(INITIAL);
+          navigator("/my/react");
+        } else {
+          alert("Wrong Data");
+        }
+      });
   };
 
   return (

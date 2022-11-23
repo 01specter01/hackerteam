@@ -33,8 +33,18 @@ export default function SignUp() {
       alert(
         "Congratulations, you are one step closer to becoming a better WebDeveloper!!! Welcome to our world, you Nerd!!! 🥳 🥳 🥳"
       );
-      setLogIn((prev) => (prev = INITIAL));
-      navigator("/root/react");
+      fetch("http://localhost:3000/users", {
+        method: "POST",
+        body: JSON.stringify(logIn),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => {
+          setLogIn((prev) => (prev = INITIAL));
+          navigator("/my/login");
+        });
     } else {
       setLogIn((prev) => (prev = { ...prev, passwordCheck: false }));
     }

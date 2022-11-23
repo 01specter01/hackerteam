@@ -19,7 +19,7 @@ export default function CodingSubscription() {
             </ul>
             <button
               className="btnSignUp"
-              onClick={() => navigator("/root/signup")}
+              onClick={() => navigator("/my/signup")}
             >
               SignUp
             </button>

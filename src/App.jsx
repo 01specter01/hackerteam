@@ -19,7 +19,7 @@ function App() {
   const navigator = useNavigate();
   useEffect(() => {
     setTimeout(() => {
-      navigator("/root/react");
+      navigator("/my/react");
     }, 2000);
   }, []);
 
@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Loading />} />
-        <Route path="root" element={<Root />}>
+        <Route path="my" element={<Root />}>
           <Route path={navItems.navItems[0]} element={<Home />} />
           <Route path={navItems.navItems[1]} element={<Docs />} />
           <Route path={navItems.navItems[2]} element={<Tutorial />} />
