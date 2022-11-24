@@ -1,43 +1,50 @@
 $primary: #21232a;
 $secondary: #61dafbaa;
 $third: beige;
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0.5rem;
-  justify-content: center;
-}
-form button {
-  width: 7rem;
-  height: 3rem;
-  margin: 5px;
-  background-color: $primary;
-  color: $third;
-  border: unset;
-  transition: 0.3s;
-
-}
-input {
-  width: 26rem;
-  height: 2rem;
-}
-label {
-  margin: 6px;
-  font-size: larger;
-}
 .fC {
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-textarea{
-    padding: 10px;
-}
-form button:hover{
-    color:#21232a;
-    background-color: #61dafbaa;
-    border-radius: 1rem;
-    transition: 0.3s;
+  gap: 1rem;
+
+  form {
+    box-shadow: 0 0 30px 2px $primary;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    justify-content: center;
+    border-radius: 5px;
+    button {
+      padding: 0.4rem 5rem;
+      background-color: $secondary;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px 2px #444;
+      &:hover {
+        color: #21232a;
+        background-color: #61dafbaa;
+        border-radius: 1rem;
+        transition: 0.3s;
+      }
+    }
+    input {
+      width: 100%;
+      height: 2rem;
+      padding: 0.5rem;
+      outline: none;
+    }
+    label {
+      margin: 6px;
+      font-size: larger;
+      font-weight: 700;
+    }
+    textarea {
+      padding: 10px;
+      width: 100%;
+    }
+  }
 }

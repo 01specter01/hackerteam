@@ -3,12 +3,9 @@ $secondary: #61dafbaa;
 $third: beige;
 
 .docs {
-  height: 600px;
-  display: flex;
-
   .rightContainer {
+    margin: 0 auto;
     padding: 2rem 2rem;
-
     text-align: justify;
     width: 70%;
     overflow: scroll;
@@ -17,9 +14,10 @@ $third: beige;
       display: none;
     }
     .docContainer {
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       margin: 2rem;
-      width: 70%;
 
       h2 {
         text-align: center;

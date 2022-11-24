@@ -1,13 +1,41 @@
-.v-Countainer{
+$primary: #21232a;
+$secondary: #61dafbaa;
+$third: beige;
+.tutorials {
+  width: 70%;
+  height: 100%;
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+  align-items: center;
+  justify-items: center;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .textVideo {
+    font-size: 1.5rem;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
+    justify-content: space-between;
+  }
+  .likeIcons {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .liked {
+    &:hover {
+      color: $secondary;
+    }
+  }
+  .disliked {
+    &:hover {
+      color: red;
+    }
+  }
+  .counter {
+    color: red;
+  }
 }
-.v-Countainer h1{
-    margin: 3rem;
-}
-.h-Countainer{
-    display: flex;
-    flex-wrap: wrap;
-}
+

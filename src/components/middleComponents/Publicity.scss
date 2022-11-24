@@ -1,27 +1,32 @@
 $primary: #21232a;
 $secondary: #61dafbaa;
 $third: beige;
-.textPublicity {
-  box-shadow: 0 0 30px 5px $primary;
-
+.publicity {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  height: 500px;
-  border-radius: 5px;
-  h1 {
-    color: $secondary;
-  }
-  .animatedBtn {
-    background-color: rgb(192, 43, 43);
-    box-shadow: 0 0 20px 5px #444;
-    padding: 0.5rem 1.3rem;
-    border: none;
-    color: aliceblue;
-    font-size: 1.2rem;
-    font-weight: 900;
+
+  .textPublicity {
+    box-shadow: 0 0 30px 2px $primary;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 600px;
     border-radius: 5px;
+    h1 {
+      color: $secondary;
+    }
+    .animatedBtn {
+      background-color: rgb(192, 43, 43);
+      box-shadow: 0 0 20px 4px #444;
+      padding: 0.5rem 1.3rem;
+      border: none;
+      color: aliceblue;
+      font-size: 1.2rem;
+      font-weight: 900;
+      border-radius: 5px;
+    }
   }
 }
