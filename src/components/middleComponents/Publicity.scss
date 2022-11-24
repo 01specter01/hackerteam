@@ -1,5 +1,5 @@
 $primary: #21232a;
-$secondary: #61dafbaa;
+$secondary: #43d8fc;
 $third: beige;
 .publicity {
   display: flex;
@@ -14,7 +14,6 @@ $third: beige;
     text-shadow: 1px 2px rgb(192, 43, 43);
   }
   .textPublicity {
-    background-color: white;
     box-shadow: 0 0 30px 2px $primary;
     padding: 2rem;
     display: flex;
