@@ -1,7 +1,7 @@
 {
   "tutorial": {
     "title": [
-      "Learn useState In 15 Minutes - React Hooks Explained",
+      "Learn useState In 15 Minutes",
       "Learn useEffect In 13 Minutes",
       "Learn useMemo In 10 Minutes",
       "Learn useRef in 11 Minutes     ",
@@ -88,19 +88,22 @@
     {
       "title": "Free",
       "text1": "10 Questionss per Month",
-      "text2": "Avaible Mo-Fr 09.00-12.00",
+      "text2": "Avaible :",
+      "text2a": "Mo-Fr 09.00-12.00",
       "text3": ["Basics", "Operators", "OneHook"]
     },
     {
       "title": "On demand",
       "text1": "$0.1 per Question",
-      "text2": "Avaible Mo-Fr 09.00-18.00",
+      "text2": "Avaible :",
+      "text2a": "Mo-Fr 09.00-18.00",
       "text3": ["Basics", "Hooks", "Components"]
     },
     {
       "title": "Vip/Pro",
       "text1": "$9.99 per Month",
-      "text2": "Avaible 24/7",
+      "text2": "Avaible : ",
+      "text2a": "24/7",
       "text3": ["CustomHooks", "Insider", "Components"]
     }
   ]
