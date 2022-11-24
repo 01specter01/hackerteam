@@ -3,41 +3,37 @@ $secondary: #61dafbaa;
 $third: beige;
 
 .cardsContainer {
-  gap: 7rem;
-  justify-content: center;
-  align-items: center;
-}
-.cardContainer {
-  aspect-ratio: 2/3;
-  box-shadow: 0 0 15px 5px #444;
-  border-radius: 5px;
-  height: 450px;
-  text-align: center;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  gap: 1.7rem;
-  padding: 0.5rem;
-  .optionCards {
-    & > li {
-      list-style-type: none;
-      text-decoration: underline;
+  gap: 7rem;
+  .cardContainer {
+    width: calc(100% / 3);
+    box-shadow: 0 0 15px 5px #444;
+    border-radius: 5px;
+    height: 450px;
+    text-align: center;
+
+    .optionCards {
+      & > li {
+        list-style-type: none;
+        text-decoration: underline;
+        color: rgb(42, 120, 145);
+      }
+    }
+    h1 {
       color: rgb(42, 120, 145);
     }
-  }
-  h1 {
-    color: rgb(42, 120, 145);
-  }
-  h2 {
-    color: rgb(192, 43, 43);
-  }
-  button {
-    padding: 0.4rem 1.2rem;
-    background-color: $secondary;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 5px 2px #444;
-    font-weight: 700;
+    h2 {
+      color: rgb(192, 43, 43);
+    }
+    button {
+      padding: 0.4rem 1.2rem;
+      background-color: $secondary;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px 2px #444;
+      font-weight: 700;
+    }
   }
 }

@@ -6,9 +6,7 @@ import React from "react";
 import { Box, Container, Row, Column, Heading } from "./FooterStyles";
 
 const Footer = () => {
-    const handleLoading = (e) => {
-        e.preventDefault();
-    };
+   
     return (
         <Box>
             <Container>
