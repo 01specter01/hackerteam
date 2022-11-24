@@ -1,39 +1,38 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
+  padding: 16px 10px 10px 10px;
+  background: #444;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
-    padding: 50px 20px 30px 20px;
-    background: #444;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-    @media (max-width: 1000px) {
-        padding: 70px 30px;
-    }
+  @media (max-width: 1000px) {
+    padding: 50px 30px;
+  }
 `;
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1000px;
+  align-items: center;
+  max-width: 600px;
   margin: 0 auto;
 `;
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: left;
-  margin-left: 60px;
+  text-align: center;
+  justify-content: center;
 `;
 
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
   color: #61dafbaa;
-
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
@@ -41,8 +40,8 @@ export const Row = styled.div`
 
 export const FooterLink = styled.a`
   color: beige;
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: 5px;
+  font-size: 16px;
   text-decoration: none;
 
   &:hover {
@@ -52,8 +51,8 @@ export const FooterLink = styled.a`
 `;
 
 export const Heading = styled.p`
-  font-size: 24px;
+  font-size: 20px;
   color: #61dafbaa;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: bold;
 `;
