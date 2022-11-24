@@ -4,7 +4,11 @@ import Card from "react-bootstrap/Card";
 export default function Testemonials() {
     return (
         <div className="testimonials">
-            <Card>
+            <Card
+                style={{
+                    width: "300px",
+                }}
+            >
                 <Card.Header
                     style={{
                         display: "flex",
@@ -20,6 +24,9 @@ export default function Testemonials() {
                     </p>
                     <br />
                     <img
+                        style={{
+                            width: "500px",
+                        }}
                         src={
                             "https://support.trustpilot.com/hc/article_attachments/4408402471314/Product_review_ratings_page_example_product_review_graph.png"
                         }
@@ -27,7 +34,7 @@ export default function Testemonials() {
                     />
                 </Card.Body>
             </Card>
-
+            <br />
             <article>
                 <Card>
                     <Card.Header>
