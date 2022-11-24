@@ -2,6 +2,9 @@ import data from "../../data.json";
 import { useOutletContext } from "react-router-dom";
 import "./Docs.scss";
 import Publicty from "./Publicty";
+import "./Docs.scss";
+import Tools from "../Tools";
+
 
 export default function Docs() {
   const search = useOutletContext();
@@ -12,11 +15,7 @@ export default function Docs() {
           <div className="docContainer" key={el.title}>
             <h2>{el.title}</h2>
             <p>
-              {el.description.slice(0, el.description.indexOf(search))}
-              <span className="searched">{search}</span>
-              {el.description.slice(
-                el.description.indexOf(search) + search.length
-              )}
+              <Tools search={search} str={el.description} />
             </p>
           </div>
         ))}
