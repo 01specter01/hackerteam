@@ -75,7 +75,7 @@ export default function Testemonials() {
                         </blockquote>
                     </Card.Body>
                 </Card>
-                <Card className="card">
+                <Card className="card next">
                     <Card.Header>
                         Rating from Customer: Benjamin Blümchen
                     </Card.Header>
