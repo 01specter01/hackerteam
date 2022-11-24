@@ -5,14 +5,15 @@ import "./SignUp.scss";
 
 export default function SignUp() {
   const navigator = useNavigate();
-  const [logIn, setLogIn] = useState({
+  const INITIAL = {
     firstName: "",
     lastName: "",
     email: "",
     password: "",
     repeatPassword: "",
     passwordCheck: true,
-  });
+  };
+  const [logIn, setLogIn] = useState(INITIAL);
 
   const handleChange = (e) => {
     setLogIn(
@@ -26,23 +27,28 @@ export default function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLogIn(
-      (prev) =>
-        (prev = {
-          firstName: "",
-          lastName: "",
-          email: "",
-          password: "",
-          repeatPassword: "",
-        })
-    );
+
     if (logIn.password === logIn.repeatPassword && logIn.password.length > 5) {
       setLogIn((prev) => (prev = { ...prev, passwordCheck: true }));
 
-      alert(
-        "Congratulations, you are one step closer to becoming a better WebDeveloper!!! Welcome to our world, you Nerd!!! 🥳 🥳 🥳"
-      );
-      navigator("/root/react");
+      // fetch on POST => save new User from Form
+
+      fetch("http://localhost:3000/users", {
+        method: "POST",
+        body: JSON.stringify(logIn),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => {
+          alert(
+            "Congratulations, you are one step closer to becoming a better WebDeveloper!!! Welcome to our world, you Nerd!!! 🥳 🥳 🥳"
+          );
+          // on Past set setLogIn to initial and go to the login Page
+          setLogIn((prev) => (prev = INITIAL));
+          navigator("/my/login");
+        });
     } else {
       setLogIn((prev) => (prev = { ...prev, passwordCheck: false }));
     }

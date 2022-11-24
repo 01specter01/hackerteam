@@ -5,9 +5,8 @@ import Publicty from "./Publicty";
 import "./Docs.scss";
 import Tools from "../Tools";
 
-
 export default function Docs() {
-  const search = useOutletContext();
+  const [search] = useOutletContext();
   return (
     <div className="docs">
       <div className="rightContainer">

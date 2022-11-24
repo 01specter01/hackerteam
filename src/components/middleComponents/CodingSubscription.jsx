@@ -10,8 +10,8 @@ export default function CodingSubscription() {
           <div className="cardContainer">
             <h1>{card.title}</h1>
             <h2>{card.text1}</h2>
-            <h2>{card.text2}</h2>
-            <h2>{card.text2a}</h2>
+            <h3>{card.text2}</h3>
+            <h3>{card.text2a}</h3>
             <ul className="optionCards">
               {card.text3.map((el) => (
                 <li>{el}</li>
@@ -19,7 +19,7 @@ export default function CodingSubscription() {
             </ul>
             <button
               className="btnSignUp"
-              onClick={() => navigator("/root/signup")}
+              onClick={() => navigator("/my/signup")}
             >
               SignUp
             </button>

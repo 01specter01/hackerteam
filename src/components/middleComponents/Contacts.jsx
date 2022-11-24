@@ -49,7 +49,9 @@ export default function Contacts() {
             placeholder="text you Name"
             type="text"
             value={value.vorname}
-            onChange={() => dispatch({ type: "vorname" })}
+            onChange={(e) =>
+              dispatch({ type: "vorname", value: e.target.value })
+            }
             required
           />
           <label>Surname</label>
@@ -82,7 +84,7 @@ export default function Contacts() {
           <button
             onClick={() => {
               alert(
-                "Thank you for your message, I will contact you as soon as possible"
+                "Thank you for your message, we will contact you as soon as possible."
               );
             }}
           >
