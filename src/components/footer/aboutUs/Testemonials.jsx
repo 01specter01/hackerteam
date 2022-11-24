@@ -1,7 +1,8 @@
 // import React from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
-// import Card from "react-bootstrap/Card";
-import "./aboutUs.css";
+
+// import Card from "react-bootstrap/Card"
+
 export default function Testemonials() {
   return (
     <div className="testimonials">

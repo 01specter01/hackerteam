@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Box = styled.div`
   padding: 16px 10px 10px 10px;
-  background: #444;
+  background: #21232a;
   position: absolute;
   bottom: 0;
   width: 100%;

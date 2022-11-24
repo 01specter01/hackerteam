@@ -1,7 +1,9 @@
 import data from "../../data.json";
 import { useOutletContext } from "react-router-dom";
 
+
 import "./Docs.scss";
+
 
 import Publicty from "./Publicty";
 import "./Docs.scss";
