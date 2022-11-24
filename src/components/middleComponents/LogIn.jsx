@@ -24,15 +24,15 @@ export default function LogIn() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-// get Method on JSON-SERVER to take all users
-// chef if user is in (if .length is avaible => filter().length =>[{}].length => 1 is truthy)
+    // get Method on JSON-SERVER to take all users
+    // chef if user is in (if .length is avaible => filter().length =>[{}].length => 1 is truthy)
     fetch("http://localhost:3000/users")
       .then((res) => res.json())
       .then((json) => {
         if (
           json.filter(
             (el) => el.email === logIn.email && el.password === logIn.password
-          ).length 
+          ).length
         ) {
           // find the user from array find() => {userObject}
           const user = json.find(
@@ -41,7 +41,7 @@ export default function LogIn() {
           // save in localstorage the name of user
           localStorage.setItem("user", JSON.stringify(user.firstName));
           // change the state of logged
-          setLogged(user.firstName);
+          setLogged(user);
           // reset form
           setLogIn(INITIAL);
           navigator("/my/react");
