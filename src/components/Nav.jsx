@@ -25,7 +25,9 @@ export default function Nav({ setSearch, logged, setLogged }) {
           />
         ) : (
           <>
-            <span style={{ color: "white", margin: "10px" }}>{logged}</span>
+            <span style={{ color: "white", margin: "10px" }}>
+              {logged.firstName}
+            </span>
             <MdLogout
               style={{ color: "white", margin: "10px" }}
               onClick={() => {

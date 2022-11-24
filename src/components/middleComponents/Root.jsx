@@ -13,7 +13,7 @@ export default function Root() {
   return (
     <div className="rootcontainer">
       <Nav setSearch={setSearch} logged={logged} setLogged={setLogged} />
-      <Outlet context={[search, setLogged]} />
+      <Outlet context={[search, setLogged, logged]} />
       <Footer />
     </div>
   );
