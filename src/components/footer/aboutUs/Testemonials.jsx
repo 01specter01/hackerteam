@@ -4,14 +4,30 @@ import Card from "react-bootstrap/Card";
 export default function Testemonials() {
     return (
         <div className="testimonials">
-            <h1>Testemonials</h1>
-            <p>The graph displays how our cutomers have raited our service:</p>
-            <img
-                src={
-                    "https://support.trustpilot.com/hc/article_attachments/4408402471314/Product_review_ratings_page_example_product_review_graph.png"
-                }
-                alt="graph"
-            />
+            <Card>
+                <Card.Header
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                    }}
+                >
+                    <h1>Testemonials</h1>
+                </Card.Header>
+                <Card.Body>
+                    <p>
+                        The graph displays how our cutomers have raited our
+                        service:
+                    </p>
+                    <br />
+                    <img
+                        src={
+                            "https://support.trustpilot.com/hc/article_attachments/4408402471314/Product_review_ratings_page_example_product_review_graph.png"
+                        }
+                        alt="graph"
+                    />
+                </Card.Body>
+            </Card>
+
             <article>
                 <Card>
                     <Card.Header>
