@@ -15,7 +15,7 @@ export default function Home() {
                 <Tools str={text} search={search} />
                 <br />
                 <br />
-                <h3>Answers to most frequent questions</h3> <br />
+                <h3>Answers to most frequent asked questions</h3> <br />
                 <h6>Why use React instead of Javascript?</h6>
                 <p>
                     Depending on the task, React can be helpfull when creating a
@@ -36,6 +36,14 @@ export default function Home() {
                     <li>Install text editor i.e. Visual-Studio-Code</li>
                     <li>Wright in Terminal: create-react-app my-react-app</li>
                 </ol>
+                <br />
+                <h6>Is there a dissadvantage to using React?</h6>
+                <p>
+                    A drawback could be the constand need to relearn how to work
+                    with React since it is always changes. But this depends more
+                    on the developers attitude towards keeping up with each
+                    iteration.
+                </p>{" "}
             </span>
             <Publicty />
         </div>
