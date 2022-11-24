@@ -17,6 +17,7 @@ export default function Nav({ setSearch, logged, setLogged }) {
         </NavLink>
       ))}
       <div className="searchContainer">
+        {/* Toggle icon Login vs Logout + userName in dependence of state logged => userObject || false*/}
         {!logged ? (
           <MdLogin
             style={{ color: "white", margin: "10px" }}
@@ -28,6 +29,7 @@ export default function Nav({ setSearch, logged, setLogged }) {
             <MdLogout
               style={{ color: "white", margin: "10px" }}
               onClick={() => {
+                // on logout remove userName from localstorage && setLogged to false
                 setLogged(false);
                 localStorage.removeItem("user");
                 navigator("/my/react");

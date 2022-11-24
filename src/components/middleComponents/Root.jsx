@@ -5,6 +5,7 @@ import "./Root.scss";
 import Footer from "../footer/Footer";
 
 export default function Root() {
+  // Use state to check is user logged or no => userObject || false (is depend on localstorage)
   const user = JSON.parse(localStorage.getItem("user"));
   const [logged, setLogged] = useState(user ? user : false);
   const [search, setSearch] = useState("");
