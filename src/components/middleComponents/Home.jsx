@@ -15,7 +15,19 @@ export default function Home() {
                 <Tools str={text} search={search} />
                 <br />
                 <br />
-                <h3>How does one go about creating a react app?</h3>
+                <h3>Answers to most frequent questions</h3> <br />
+                <h6>Why use React instead of Javascript?</h6>
+                <p>
+                    Depending on the task, React can be helpfull when creating a
+                    large aplication with multiple components. React uses
+                    something called the virtual DOM (Document Object Model) a
+                    copy of the real DOM, and then only update the componends
+                    wich have been changed, in contrast to the entire DOM. This
+                    allows the rendering process to take less time and be
+                    efficient.
+                </p>{" "}
+                <br />
+                <h6>How does one go about creating a react app?</h6>
                 <ol>
                     <li>
                         Download NodeJS from official website:
@@ -24,7 +36,6 @@ export default function Home() {
                     <li>Install text editor i.e. Visual-Studio-Code</li>
                     <li>Wright in Terminal: create-react-app my-react-app</li>
                 </ol>
-                <h3>How does one go about creating a react app?</h3>
             </span>
             <Publicty />
         </div>
