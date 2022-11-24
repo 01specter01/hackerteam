@@ -1,0 +1,18 @@
+.home {
+  .homeLeft {
+    width: 100%;
+    display: grid;
+    padding: 0 7rem 0 7rem;
+    grid-template-rows: 1fr 1fr;
+
+    .upLeft {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .downLeft {
+    }
+  }
+}

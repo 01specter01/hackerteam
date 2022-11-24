@@ -5,10 +5,10 @@ $third: beige;
 .docs {
   .rightContainer {
     margin: 0 auto;
-    padding: 2rem 2rem;
     text-align: justify;
-    width: 70%;
     overflow: scroll;
+    width: 100%;
+    padding: 0 7rem 0 7rem;
 
     &::-webkit-scrollbar {
       display: none;
@@ -17,7 +17,7 @@ $third: beige;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 2rem;
+      align-items: center;
 
       h2 {
         text-align: center;
