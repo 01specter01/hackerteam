@@ -1,5 +1,9 @@
+
 import { NavLink } from "react-router-dom";
 import "./Footer.scss";
+
+import React from "react";
+
 
 import {
   Box,
@@ -11,6 +15,7 @@ import {
 } from "./FooterStyles";
 
 const Footer = () => {
+
   const handleLoading = (e) => {
     e.preventDefault();
   };
@@ -66,5 +71,6 @@ const Footer = () => {
       </Container>
     </Box>
   );
+
 };
 export default Footer;

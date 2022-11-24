@@ -23,6 +23,7 @@ function App() {
     }, 2000);
   }, []);
 
+
   return (
     <div className="App">
       <Routes>
@@ -43,6 +44,7 @@ function App() {
       </Routes>
     </div>
   );
+
 }
 
 export default App;
