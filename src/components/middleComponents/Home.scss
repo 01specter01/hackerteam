@@ -1,0 +1,39 @@
+$primary: #21232a;
+$secondary: #61dafbaa;
+$third: beige;
+.home {
+  .homeLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 7rem 0 7rem;
+    gap: 2rem;
+    .list {
+      text-align: left;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: $secondary;
+      font-weight: 900;
+      text-shadow: 1px 2px rgb(192, 43, 43);
+    }
+    h2 {
+      color: rgb(192, 43, 43);
+      font-weight: 900;
+    }
+    h3 {
+      text-decoration: underline;
+      font-style: italic;
+      font-weight: 900;
+      &:hover {
+        color: $secondary;
+      }
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}

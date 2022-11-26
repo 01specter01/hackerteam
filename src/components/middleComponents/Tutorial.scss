@@ -2,8 +2,7 @@ $primary: #21232a;
 $secondary: #61dafbaa;
 $third: beige;
 .tutorials {
-  width: 70%;
-  height: 100%;
+  width: 100%;
   gap: 1.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -38,4 +37,3 @@ $third: beige;
     color: red;
   }
 }
-

@@ -1,10 +1,18 @@
 $primary: #21232a;
-$secondary: #61dafbaa;
+$secondary: #43d8fc;
 $third: beige;
 .publicity {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-
+  align-items: flex-end;
+  gap: 1rem;
+  & > h1 {
+    margin: 7rem 0;
+    text-align: center;
+    color: $secondary;
+    text-shadow: 1px 2px rgb(192, 43, 43);
+  }
   .textPublicity {
     box-shadow: 0 0 30px 2px $primary;
     padding: 2rem;
@@ -13,7 +21,7 @@ $third: beige;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    height: 600px;
+    height: 300px;
     border-radius: 5px;
     h1 {
       color: $secondary;

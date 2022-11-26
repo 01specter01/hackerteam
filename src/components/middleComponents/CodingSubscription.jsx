@@ -1,19 +1,20 @@
-import cards from "../../data.json";
-import "./CodingSubscription.scss";
+import data from "../../data.json";
 import { useNavigate } from "react-router-dom";
+import "./CodingSubscription.scss";
+
 export default function CodingSubscription() {
   const navigator = useNavigate();
   return (
-    <div className="cardsContainer">
-      {cards.cards.map((card) => {
+    <div className="mainContainer">
+      {data.cards.map((data) => {
         return (
-          <div className="cardContainer">
-            <h1>{card.title}</h1>
-            <h2>{card.text1}</h2>
-            <h3>{card.text2}</h3>
-            <h3>{card.text2a}</h3>
-            <ul className="optionCards">
-              {card.text3.map((el) => (
+          <div className="blockContainer">
+            <h1>{data.title}</h1>
+            <h2>{data.text1}</h2>
+            <h3>{data.text2}</h3>
+            <h3>{data.text2a}</h3>
+            <ul className="options">
+              {data.text3.map((el) => (
                 <li>{el}</li>
               ))}
             </ul>
