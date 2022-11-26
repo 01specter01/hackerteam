@@ -23,10 +23,6 @@ export default function Tutorial() {
     );
   };
   return (
-<<<<<<< HEAD
-=======
-
->>>>>>> 029a2525d027880dd15f94a4d9bf6e266e7dcf9c
     <div>
       <div className="tutorials">
         {data.tutorial.title.map((el, i) => {
@@ -35,20 +31,12 @@ export default function Tutorial() {
               <iframe
                 width="550"
                 height="320"
-<<<<<<< HEAD
-=======
-
->>>>>>> 029a2525d027880dd15f94a4d9bf6e266e7dcf9c
                 src={`https://www.youtube.com/embed/${data.tutorial.link[i]}`}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 title="Embedded youtube"
               />
-<<<<<<< HEAD
-=======
-
->>>>>>> 029a2525d027880dd15f94a4d9bf6e266e7dcf9c
 
               <h3 className="textVideo">
                 {el}
@@ -70,9 +58,5 @@ export default function Tutorial() {
       </div>
       <Publicty />
     </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 029a2525d027880dd15f94a4d9bf6e266e7dcf9c
   );
 }
