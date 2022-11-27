@@ -1,15 +1,9 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  padding: 16px 10px 10px 10px;
   background: #21232a;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-
-  @media (max-width: 1000px) {
-    padding: 50px 30px;
-  }
+  // position: absolute;
+  height: 100%;
 `;
 
 export const Container = styled.div`
@@ -33,8 +27,8 @@ export const Row = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   color: #61dafbaa;
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  @media (max-width: 400px) {
+    // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 `;
 

@@ -14,7 +14,9 @@ export default function Root() {
     <div className="rootcontainer">
       <Nav setSearch={setSearch} logged={logged} setLogged={setLogged} />
       <Outlet context={[search, setLogged, logged]} />
-      <Footer />
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -2,15 +2,21 @@ $primary: #21232a;
 $secondary: #61dafbaa;
 $third: beige;
 
-.mainContainer {
-  gap: 7rem;
-  justify-content: center;
+#mainSubscrption {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   align-items: center;
+  @media (max-width: 1120px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   .blockContainer {
-    aspect-ratio: 2/3;
+    width: min(400px, 70%);
+    aspect-ratio: 3/4;
     box-shadow: 0 0 15px 5px #444;
     border-radius: 5px;
-    height: 450px;
     text-align: center;
     display: flex;
     flex-direction: column;

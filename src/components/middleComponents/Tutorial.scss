@@ -13,6 +13,9 @@ $third: beige;
   &::-webkit-scrollbar {
     display: none;
   }
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
   .textVideo {
     font-size: 1.5rem;
     display: flex;
