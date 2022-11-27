@@ -24,7 +24,7 @@ export default function Nav({ setSearch, logged, setLogged }) {
   };
   return (
     <div className="navContainer">
-      <div>
+      <div className="first">
         <NavLink to="/my/react">
           <img src={reactLogo} alt="reactLogo" />
         </NavLink>
@@ -41,7 +41,7 @@ export default function Nav({ setSearch, logged, setLogged }) {
         {/* Toggle icon Login vs Logout + userName in dependence of state logged => userObject || false*/}
         {!logged ? (
           <MdLogin
-            style={{ color: "white", margin: "10px" }}
+            style={{ color: "white", margin: "10px", width: "24px" }}
             onClick={() => navigator("/my/login")}
           />
         ) : (
@@ -53,7 +53,7 @@ export default function Nav({ setSearch, logged, setLogged }) {
               {JSON.parse(localStorage.getItem("user")).firstName}
             </span>
             <MdLogout
-              style={{ color: "white", margin: "10px" }}
+              style={{ color: "white", margin: "10px", width: "24px" }}
               onClick={() => {
                 // on logout remove userName from localstorage && setLogged to false
                 setLogged(false);

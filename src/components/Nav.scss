@@ -10,14 +10,14 @@ $third: beige;
   background-color: $primary;
   padding: 2.5rem;
 
-  @media (max-width: 580px) {
-    // gap: 0.5rem;
-  }
-  > div {
+  > div.first {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 3rem;
+    @media (max-width: 580px) {
+      gap: 0.5rem;
+    }
   }
   a {
     color: $third;
@@ -52,10 +52,11 @@ $third: beige;
   }
   .searchContainer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     align-items: center;
+    position: relative;
     .username {
-      @media (max-width: 500px) {
+      @media (max-width: 730px) {
         display: none;
       }
     }
@@ -65,9 +66,9 @@ $third: beige;
       padding: 0.3rem;
       border: none;
       font-size: 1.3rem;
-
+      width: 200px;
       @media (max-width: 780px) {
-        width: calc(1rem + 30%);
+        width: calc(1rem + 40%);
         &::placeholder {
           font-size: 1rem;
         }
@@ -75,7 +76,8 @@ $third: beige;
     }
   }
   .searchIcon {
-    transform: translateX(-250%);
+    position: absolute;
+    // transform: translateX(-120%);
     font-size: 1rem;
     @media (max-width: 500px) {
       display: none;
