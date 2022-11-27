@@ -110,7 +110,7 @@ export default function Contacts() {
           <textarea
             required
             placeholder="Text us..."
-            rows="10"
+            rows="5"
             cols="47"
             onChange={(e) =>
               dispatch({ type: "textarea", value: e.target.value })

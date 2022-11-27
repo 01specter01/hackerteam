@@ -3,17 +3,32 @@ $secondary: #61dafbaa;
 $third: beige;
 .navContainer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 2rem;
   font-size: 1.5rem;
   background-color: $primary;
   padding: 2.5rem;
-  position: relative;
+
+  > div.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    @media (max-width: 580px) {
+      gap: 0.5rem;
+    }
+  }
   a {
     color: $third;
     text-decoration: none;
     &.active {
       color: $secondary;
       text-decoration: underline;
+      .iconNav {
+        color: $secondary;
+        text-decoration: underline;
+      }
     }
     &:nth-of-type(1) {
       font-weight: 900;
@@ -21,22 +36,51 @@ $third: beige;
       color: $secondary;
     }
   }
+  .textNav {
+    display: none;
+
+    @media (min-width: 1100px) {
+      display: inline;
+    }
+  }
+
+  .iconNav {
+    color: white;
+    @media (min-width: 1100px) {
+      display: none;
+    }
+  }
   .searchContainer {
-    position: absolute;
-    right: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    position: relative;
+    .username {
+      @media (max-width: 730px) {
+        display: none;
+      }
+    }
     .searchInput {
       outline: none;
       border-radius: 5px;
       padding: 0.3rem;
       border: none;
       font-size: 1.3rem;
+      width: 200px;
+      @media (max-width: 780px) {
+        width: calc(1rem + 40%);
+        &::placeholder {
+          font-size: 1rem;
+        }
+      }
     }
   }
   .searchIcon {
-    transform: translateX(-120%);
+    position: absolute;
+    // transform: translateX(-120%);
     font-size: 1rem;
+    @media (max-width: 500px) {
+      display: none;
+    }
   }
 }

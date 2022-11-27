@@ -23,23 +23,19 @@ export default function Tutorial() {
     );
   };
   return (
-
     <div>
       <div className="tutorials">
         {data.tutorial.title.map((el, i) => {
           return (
             <div className="v-Countainer">
               <iframe
-                width="550"
-                height="320"
-
+                className="iframeVideo"
                 src={`https://www.youtube.com/embed/${data.tutorial.link[i]}`}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 title="Embedded youtube"
               />
-
 
               <h3 className="textVideo">
                 {el}
@@ -61,6 +57,5 @@ export default function Tutorial() {
       </div>
       <Publicty />
     </div>
-
   );
 }
