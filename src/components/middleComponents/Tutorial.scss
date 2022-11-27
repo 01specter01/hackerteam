@@ -13,6 +13,13 @@ $third: beige;
   &::-webkit-scrollbar {
     display: none;
   }
+  .iframeVideo {
+    width: 550px;
+    aspect-ratio: 55/32;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;
   }
