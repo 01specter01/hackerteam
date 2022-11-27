@@ -2,10 +2,11 @@ $primary: #21232a;
 $secondary: #61dafbaa;
 $third: beige;
 .logIn {
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 
   .signIn {
     display: flex;
@@ -51,6 +52,16 @@ $third: beige;
         border: none;
         border-radius: 5px;
         box-shadow: 0 0 5px 2px #444;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      textarea {
+        font-family: "Roboto", sans-serif;
+        padding: 0.7rem;
+        font-size: 1.2rem;
+        outline: none;
+        border-radius: 5px;
       }
     }
   }

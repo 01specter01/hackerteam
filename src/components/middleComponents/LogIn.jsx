@@ -26,7 +26,7 @@ export default function LogIn() {
     e.preventDefault();
     // get Method on JSON-SERVER to take all users
     // chef if user is in (if .length is avaible => filter().length =>[{}].length => 1 is truthy)
-    fetch("http://localhost:3000/users")
+    fetch("https://hackerteamserver.onrender.com/users")
       .then((res) => res.json())
       .then((json) => {
         if (

@@ -33,7 +33,7 @@ export default function SignUp() {
 
       // fetch on POST => save new User from Form
 
-      fetch("http://localhost:3000/users", {
+      fetch("https://hackerteamserver.onrender.com/users", {
         method: "POST",
         body: JSON.stringify(logIn),
         headers: {
