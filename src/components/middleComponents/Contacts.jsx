@@ -1,4 +1,4 @@
-import "./Contacts.scss";
+import "./SignUp.scss";
 import { useReducer } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
 
@@ -54,7 +54,7 @@ export default function Contacts() {
   const [value, dispatch] = useReducer(reducer, initState);
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/messages", {
+    fetch("https://hackerteamserver.onrender.com/messages", {
       method: "POST",
       body: JSON.stringify(value),
       headers: {
@@ -68,12 +68,11 @@ export default function Contacts() {
       });
   };
   return (
-    <div>
-      <div className="fC">
-        <form onSubmit={handleSubmit}>
-          <label>Name</label>
+    <section className="logIn">
+      <div className="signIn">
+        <form onSubmit={handleSubmit} className="form">
           <input
-            placeholder="text you Name"
+            placeholder="Name"
             type="text"
             value={value.firstName}
             onChange={(e) =>
@@ -81,9 +80,9 @@ export default function Contacts() {
             }
             required
           />
-          <label>Surname</label>
+
           <input
-            placeholder="text you Surname"
+            placeholder="Surname"
             type="text"
             required
             value={value.lastName}
@@ -91,23 +90,23 @@ export default function Contacts() {
               dispatch({ type: "nachname", value: e.target.value })
             }
           />
-          <label>Email Adress</label>
+
           <input
-            placeholder="text your E-mail"
+            placeholder="E-mail"
             required
             type="email"
             value={value.email}
             onChange={(e) => dispatch({ type: "email", value: e.target.value })}
           />
-          <label>Phone Number</label>
+
           <input
-            placeholder="text your number phone"
+            placeholder="Phone"
             required
             type="tel"
             value={value.phone}
             onChange={(e) => dispatch({ type: "phone", value: e.target.value })}
           />
-          <br />
+
           <textarea
             required
             placeholder="Text us..."
@@ -117,7 +116,7 @@ export default function Contacts() {
               dispatch({ type: "textarea", value: e.target.value })
             }
           />
-          <br />
+
           <button
             onClick={() => {
               alert(
@@ -125,10 +124,10 @@ export default function Contacts() {
               );
             }}
           >
-            send
+            Send
           </button>
         </form>
       </div>
-    </div>
+    </section>
   );
 }

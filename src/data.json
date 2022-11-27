@@ -87,7 +87,7 @@
   "cards": [
     {
       "title": "Free",
-      "text1": "10 Questionss per Month",
+      "text1": "10 Questions monthly",
       "text2": "Avaible :",
       "text2a": "Mo-Fr 09.00-12.00",
       "text3": ["Basics", "Operators", "OneHook"]
@@ -106,5 +106,26 @@
       "text2a": "24/7",
       "text3": ["CustomHooks", "Insider", "Components"]
     }
-  ]
+  ],
+  "home": {
+    "h1": "Welcome to Hackerteam, the platform to learn React",
+    "h2": "Answers to most frequent asked questions",
+
+    "paragraph": [
+      [
+        "Why use React instead of Javascript?",
+        "Depending on the task, React can be helpfull when creating a large aplication with multiple components. React uses something called the virtual DOM (Document Object Model) a copy of the real DOM, and then only update the componends wich have been changed, in contrast to the entire DOM. This allows the rendering process to take less time and be efficient."
+      ],
+      [
+        "How does one go about creating a react app?",
+        "Download NodeJS from official website: https://nodejs.org/en/",
+        "Install text editor i.e. Visual-Studio-Code",
+        "Write in Terminal: create-react-app my-react-app"
+      ],
+      [
+        "Is there a dissadvantage to using React?",
+        "A drawback could be the constand need to relearn how to work with React since it is always changes. But this depends more on the developers attitude towards keeping up with each iteration."
+      ]
+    ]
+  }
 }

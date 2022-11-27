@@ -1,11 +1,12 @@
 import data from "../../data.json";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useOutletContext } from "react-router-dom";
 import "./CodingSubscription.scss";
 
 export default function CodingSubscription() {
+  const [search, setLogged, logged] = useOutletContext();
   const navigator = useNavigate();
   return (
-    <div className="mainContainer">
+    <div className="mainContainer " id="mainSubscrption">
       {data.cards.map((data) => {
         return (
           <div className="blockContainer">
@@ -20,7 +21,9 @@ export default function CodingSubscription() {
             </ul>
             <button
               className="btnSignUp"
-              onClick={() => navigator("/my/signup")}
+              onClick={() =>
+                !logged ? navigator("/my/signup") : navigator("/my/react")
+              }
             >
               SignUp
             </button>
