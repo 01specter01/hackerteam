@@ -39,7 +39,7 @@ export default function LogIn() {
             (el) => el.email === logIn.email && el.password === logIn.password
           );
           // save in localstorage the name of user
-          localStorage.setItem("user", JSON.stringify(user.firstName));
+          localStorage.setItem("user", JSON.stringify(user));
           // change the state of logged
           setLogged(user);
           // reset form

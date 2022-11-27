@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { json, NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import data from "../data.json";
 import "./Nav.scss";
@@ -26,7 +26,7 @@ export default function Nav({ setSearch, logged, setLogged }) {
         ) : (
           <>
             <span style={{ color: "white", margin: "10px" }}>
-              {logged.firstName}
+              {JSON.parse(localStorage.getItem("user")).firstName}
             </span>
             <MdLogout
               style={{ color: "white", margin: "10px" }}
