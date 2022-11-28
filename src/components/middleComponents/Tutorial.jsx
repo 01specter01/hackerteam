@@ -27,7 +27,7 @@ export default function Tutorial() {
       <div className="tutorials">
         {data.tutorial.title.map((el, i) => {
           return (
-            <div className="v-Countainer">
+            <div className="v-Countainer" key={i}>
               <iframe
                 className="iframeVideo"
                 src={`https://www.youtube.com/embed/${data.tutorial.link[i]}`}

@@ -46,7 +46,7 @@ export default function LogIn() {
           setLogIn(INITIAL);
           navigator("/my/react");
         } else {
-          alert("Wrong Data");
+          alert("Wrong Data, check your input data!!!");
         }
       });
   };

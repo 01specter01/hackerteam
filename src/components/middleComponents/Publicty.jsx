@@ -1,7 +1,7 @@
 import "./Publicity.scss";
 import { Animated } from "react-animated-css";
 import { useNavigate } from "react-router-dom";
-import reactLogo from "../../assets/react.svg";
+
 import { useState } from "react";
 
 export default function Publicty() {

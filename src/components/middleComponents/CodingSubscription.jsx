@@ -7,16 +7,16 @@ export default function CodingSubscription() {
   const navigator = useNavigate();
   return (
     <div className="mainContainer " id="mainSubscrption">
-      {data.cards.map((data) => {
+      {data.cards.map((data, index) => {
         return (
-          <div className="blockContainer">
+          <div className="blockContainer" key={index}>
             <h1>{data.title}</h1>
             <h2>{data.text1}</h2>
             <h3>{data.text2}</h3>
             <h3>{data.text2a}</h3>
             <ul className="options">
-              {data.text3.map((el) => (
-                <li>{el}</li>
+              {data.text3.map((el, i) => (
+                <li key={i}>{el}</li>
               ))}
             </ul>
             <button

@@ -19,7 +19,11 @@ export default function Home() {
 
           {home.home.paragraph.map((el) => {
             return el.map((text, i) => {
-              return i === 0 ? <h3>{tools(text)}</h3> : <p>{tools(text)}</p>;
+              return i === 0 ? (
+                <h3 key={i}>{tools(text)}</h3>
+              ) : (
+                <p>{tools(text)}</p>
+              );
             });
           })}
         </>
